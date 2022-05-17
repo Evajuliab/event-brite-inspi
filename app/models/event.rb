@@ -1,8 +1,7 @@
 class Event < ApplicationRecord
     validates :start_date, presence: true
     validates :future_event
-    validates :duration, presence: true
-    numericality: { greater_than: 0 }
+    validates :duration, presence: true, numericality: { greater_than: 0 }
     validates :title, presence: true, length: { in: 5..140 }
     validate :price, presence: true, numericality: { in: 1..1000 }
     validates :location, presence: true
