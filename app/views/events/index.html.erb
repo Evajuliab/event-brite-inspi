@@ -1,0 +1,36 @@
+<h1 style="text-align:center">Découvre tous les évenements qui ont lieu près de chez toi</h1> </br>
+
+
+ 
+
+<% @events.each.with_index do |event, index| %>
+
+
+  
+  <div class="d-flex align-items-center flex-column">
+ 
+
+<div class="card border-primary mb-3" style="max-width: 20rem;">
+  <div class="card-header text-center"> Event <%= index + 1%> </br>  <%= event.title%></div>
+  <div class="card-body">
+    <h4 class="card-title">Durée : <%= event.duration %> minutes</h4>
+    <p class="card-text">Lieu : <%= event.location %></p>
+
+    <button type="button" class="btn btn-outline-primary"><%= link_to "En savoir plus", event_path(event)%></button>
+   
+    </div>
+    
+    </div>
+    
+  </div>
+  
+</div>
+</div>
+</div>
+<% end %>
+
+
+
+
+
+

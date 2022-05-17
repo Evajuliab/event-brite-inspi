@@ -1,0 +1,21 @@
+<div class="card" style="width: 40%">
+  <h3 class="card-header"><%= @event.title%></h3>
+  <div class="card-body">
+
+    <h6 class="card-subtitle text-muted"><%= @event.start_date%></h6>
+  </div>
+  <img class="card-img width="25" height="200" src="https://images.pexels.com/photos/1684187/pexels-photo-1684187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Card image cap">
+  <div class="card-body">
+    <p class="card-text"><%= @event.description %></p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Durée de l'évènement: <%= @event.duration %> minutes </li>
+    <li class="list-group-item">Prix : <%= @event.price %>€</li>
+    <li class="list-group-item">Lieu : <%= @event.location %></li>
+  </ul>
+  <div class="card-body">
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+
+  
