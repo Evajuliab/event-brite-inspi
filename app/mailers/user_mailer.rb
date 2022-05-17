@@ -1,5 +1,5 @@
 class UserMailer < ApplicationMailer
-    default from: 'info@mylouisette.com'
+    default from: 'eva.laurent.78@gmail.com'
  
     def welcome_email(user)
       #on récupère l'instance user pour ensuite pouvoir la passer à la view en @user
