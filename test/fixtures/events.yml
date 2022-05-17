@@ -1,0 +1,27 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  start_date: 2022-05-16 19:16:45
+  duration: MyString
+  integer: MyString
+  title: MyString
+  string: MyString
+  description: MyString
+  text: MyString
+  price: MyString
+  integer: MyString
+  location: MyString
+  string: MyString
+
+two:
+  start_date: 2022-05-16 19:16:45
+  duration: MyString
+  integer: MyString
+  title: MyString
+  string: MyString
+  description: MyString
+  text: MyString
+  price: MyString
+  integer: MyString
+  location: MyString
+  string: MyString
