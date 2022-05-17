@@ -1,5 +1,6 @@
 # README
 
-find my app 👉 https://event-brite-inspi.herokuapp.com/events/new
+find my app 👉 https://event-brite-inspi.herokuapp.com
+
 
 Tout n'est pas fini.. enjoy
