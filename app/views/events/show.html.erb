@@ -2,7 +2,7 @@
   <h3 class="card-header"><%= @event.title%></h3>
   <div class="card-body">
 
-    <h6 class="card-subtitle text-muted"><%= @event.start_date%></h6>
+    <h6 class="card-subtitle text-muted">Démarre le <%= (@event.start_date).strftime("%d/%m/%Y")%></h6>
   </div>
   <img class="card-img width="25" height="200" src="https://images.pexels.com/photos/1684187/pexels-photo-1684187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Card image cap">
   <div class="card-body">
