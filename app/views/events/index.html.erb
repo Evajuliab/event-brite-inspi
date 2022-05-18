@@ -13,9 +13,11 @@ Découvre tous les évenements qui ont lieu près de chez toi
 
 <div class="card border-primary mb-3" style="max-width: 45rem;">
   <div class="card-header text-center"> Event <%= index + 1%> </br>  <%= event.title%></div>
+  <img src="https://source.unsplash.com/250x250/?travel?sig=<%=rand(1..50)%>" class="img-fluid">
+
   <div class="card-body">
-    <h4 class="card-title">Durée : <%= event.duration %> minutes</h4>
-    <p class="card-text">Lieu : <%= event.location %></p>
+  <h5 class="card-title">Lieu : <%= event.location %></h5>
+    <P class="card-text">Durée : <%= event.duration %> minutes</p>
 
     <button type="button" class="btn btn-outline-primary"><%= link_to "En savoir plus", event_path(event)%></button>
    

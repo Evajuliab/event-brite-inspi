@@ -11,10 +11,10 @@ require 'faker'
 # User.destroy_all
 # Event.destroy_all
 
-15.times do 
+20.times do 
     User.create!(first_name: Faker::Name.first_name, email: Faker::Internet.email, password: Faker::String.random(length: 6))
   end
 
-  15.times do |index|
+20.times do |index|
     Event.create!(start_date: (Time.now + index), duration: index + 30, title: Faker::Book.title, description: Faker::Movies::StarWars.quote, price: index + 12, location: Faker::Address.city)
   end
