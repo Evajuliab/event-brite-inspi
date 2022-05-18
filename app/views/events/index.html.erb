@@ -1,17 +1,17 @@
-
-<h1 style="text-align:center">Découvre tous les évenements qui ont lieu près de chez toi</h1> </br>
+<h1 style="text-align:center"><% if user_signed_in? %> Hello <%= current_user.first_name %> </br><% end %>
+Découvre tous les évenements qui ont lieu près de chez toi 
+</h1> </br>
 
 
  
-
+<div class="container-fluid text-center mb-5 mt-4">
+<div class="row justify-content-around">
 <% @events.each.with_index do |event, index| %>
 
-
-  
+  <div class="col-md-3 mt-4">
   <div class="d-flex align-items-center flex-column">
- 
 
-<div class="card border-primary mb-3" style="max-width: 20rem;">
+<div class="card border-primary mb-3" style="max-width: 45rem;">
   <div class="card-header text-center"> Event <%= index + 1%> </br>  <%= event.title%></div>
   <div class="card-body">
     <h4 class="card-title">Durée : <%= event.duration %> minutes</h4>
@@ -20,15 +20,13 @@
     <button type="button" class="btn btn-outline-primary"><%= link_to "En savoir plus", event_path(event)%></button>
    
     </div>
-    
-    </div>
-    
+    </div> 
   </div>
-  
-</div>
-</div>
 </div>
 <% end %>
+</div>
+</div>
+
 
 
 
