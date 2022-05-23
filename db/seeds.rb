@@ -16,5 +16,5 @@ require 'faker'
   end
 
 20.times do |index|
-    Event.create!(start_date: (Time.now + index), duration: index + 30, title: Faker::Book.title, description: Faker::Movies::StarWars.quote, price: index + 12, location: Faker::Address.city)
+    Event.create!(start_date: (Time.now + index), duration: index + 30, title: Faker::Book.title, description: Faker::Movies::StarWars.quote, price: index + 12, location: Faker::Address.city, user_id: rand(1..20))
   end

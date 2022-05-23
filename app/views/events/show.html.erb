@@ -12,10 +12,11 @@
     <li class="list-group-item">Durée de l'évènement: <%= @event.duration %> minutes </li>
     <li class="list-group-item">Prix : <%= @event.price %>€</li>
     <li class="list-group-item">Lieu : <%= @event.location %></li>
+    <li class="list-group-item">Evénement créé par : <%= @event.user.first_name %></li>
   </ul>
   <div class="card-body">
     <a href="#" class="card-link">Card link</a>
-    <a href="#" class="card-link">Another link</a>
+    <%= link_to "rejoindre cet évènement",  new_attendance_path %>
   </div>
 
-  
+

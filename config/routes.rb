@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  
+  get 'attendances/new'
+  get 'attendances/index'
  
   root 'events#index'
   devise_for :users
@@ -11,6 +14,9 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
 resources :events
-resources :users
+resources :users do
+    resources :avatars, only: [:create]
+  end
+resources :attendances
 
 end

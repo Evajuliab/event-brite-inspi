@@ -85,3 +85,4 @@ gem 'dotenv-rails'
 gem "devise"
 
 gem 'faker'
+gem "bootstrap_form", "~> 5.0"
